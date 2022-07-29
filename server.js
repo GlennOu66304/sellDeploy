@@ -44,6 +44,8 @@ app.use('/api',routes);
 // 定义static目录，指向./dist目录
 app.use(express.static('./dist'));
 
+// How to deploy Node.js app on Heroku from GitHub ?
+// https://www.geeksforgeeks.org/how-to-deploy-node-js-app-on-heroku-from-github/
 
 // 启动express
 // module.express = app.listen(port, function(err){
