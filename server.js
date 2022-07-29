@@ -47,6 +47,12 @@ app.use(express.static('./dist'));
 
 // 启动express
 // module.express = app.listen(port, function(err){
+	// Heroku + node.js error (Web process failed to bind to $PORT within 60 seconds of launch)
+	// https://stackoverflow.com/questions/15693192/heroku-node-js-error-web-process-failed-to-bind-to-port-within-60-seconds-of
+	// Default web process type
+	// https://devcenter.heroku.com/articles/nodejs-support#default-web-process-type
+	// Heroku missing required flag: -a
+	// https://wajeeh-ahsan.medium.com/heroku-missing-required-flag-a-bfc7ba0a00f5
 app.listen(process.env.PORT|| 5000, function(err){
 	if(err){
 		console.log(err);
