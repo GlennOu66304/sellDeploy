@@ -47,7 +47,7 @@ app.use(express.static('./dist'));
 
 // 启动express
 // module.express = app.listen(port, function(err){
-app.listen(port, function(err){
+app.listen(process.env.PORT|| 5000, function(err){
 	if(err){
 		console.log(err);
 		return;
