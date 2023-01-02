@@ -1,5 +1,5 @@
 var express = require('express');
-var port = 8088;
+
 
 var app = express();
 
@@ -61,5 +61,5 @@ app.listen(process.env.PORT|| 5000, function(err){
 		return;
 	}
 	
-	console.log('http://localhost:' + port + '\n');
+	console.log('http://localhost:' + 5000 + '\n');
 });
